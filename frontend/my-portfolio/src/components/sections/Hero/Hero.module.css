@@ -29,7 +29,6 @@
   align-items: center;
   gap: var(--space-5);
   margin: auto;
-  top: 250px;
 }
 
 .tagline {
@@ -63,6 +62,45 @@
   margin-top: var(--space-3);
 }
 
+/* ------------ BUTTON STYLES ----------------*/
+.buttonContainer {
+  display: flex;
+  gap: var(--space-5);
+  margin-top: var(--space-3);
+}
+
+.button{
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.button:hover {
+  background-color: var(--color-accent-hover);
+  color: var(--color-text-primary);
+}
+
+.projectsButton {
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
+}
+
+.contactButton {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-text-secondary);
+}
+
+.contactButton:hover {
+  background-color: rgb(155 161 173 / 15%);
+}
+
+
+
 .scrollIndicator {
   position: absolute;
   bottom: var(--space-8);
@@ -77,6 +115,7 @@
   font-family: var(--font-mono);
   animation: float 3s ease-in-out infinite;
 }
+
 
 .scrollLine {
   width: 1px;
